@@ -8,7 +8,7 @@ The hardware consists of a Raspberry Pi zero W and a Waveshare RP2040-zero both 
 - Not enough mounting holes were placed on the main PCB. In the end I drilled out the 2.5 mm mounting holes for the Raspberry Pi to 3 mm and drilled an extra one here: [image](extra_hole_location.png). In a future revision the mounting holes should be placed in the correct locations.
 - R25 was not needed. This is the resistor in series with the buzzer. The volume can be controlled by varying the duty cycle of the PWM signal. This resistor should be removed in the next revision.
 - The buzzer is not loud enough, a different buzzer should be used.
-- The connectors for the relays should be changed, currently it consists of two connectors, one for + and one for ground. It should be changed to four connectors, one for each relay, this makes the connections more clear.
+- The connectors for the relays should be changed, currently it consists of two connectors, one for + and one for ground. It should be changed to four connectors, one for each relay, this makes the connections more clear. The current labeling on the PCB is also not correct, where it says Ground it should be 12 volt.
 - The analog circuitry for the current measurement could have its own 3.3 volt, or even a 1.65 volt regulator, this might make the measurements more stable.
 - The rp2040-zero should know if the override switches are pressed, this would make calibration easier, since the rp2040-zero can then know if it should be measuring zero current or not.
 - The electrolytic capacitors in the analog circuitry could be a lot smaller, these were only used because I had them laying around.
